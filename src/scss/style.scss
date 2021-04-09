@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import "variables";
+@import "mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $roboto;
+    font-weight: 300;
+    color: $black;
+}
+
+.wrapper {
+    min-width: 320px;
+    min-height: 100vh;
+    overflow: hidden;
+}
