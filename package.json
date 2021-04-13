@@ -1,31 +1,27 @@
 {
-  "name": "static-site-webpack",
-  "version": "2.0.0",
-  "description": "HTML template",
-  "main": "src/index.js",
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "watch": "webpack --mode development --watch",
-    "build": "webpack --mode production && prettier --print-width=120 --parser html --write public/*.html"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^6.0.1",
-    "css-loader": "^3.2.0",
-    "cssnano": "^4.1.10",
-    "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.12.0",
-    "prettier": "^1.18.2",
-    "raw-loader": "^3.1.0",
-    "sass-loader": "^8.0.0",
-    "terser-webpack-plugin": "^2.0.1",
-    "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.8"
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify-es": "^2.0.0",
+    "jquery": "^3.5.1"
   },
   "dependencies": {
-    "file-loader": "^4.2.0",
-    "html-loader": "^0.5.5",
-    "imagemin-webpack-plugin": "^2.4.2",
-    "mini-css-extract-plugin": "^0.8.0",
-    "jquery": "^3.4.1"
+    "gulp-scss": "^1.4.0"
   }
 }

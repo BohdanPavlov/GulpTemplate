@@ -1,5 +1,0 @@
-@mixin res($res){
-    @media (max-width: $res + px){
-        @content;
-    }
-}
