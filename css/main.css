@@ -39,6 +39,10 @@ img {
 
 .header {
   background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
   padding: 40px 0 0 0;
   z-index: 50;
 }
@@ -52,10 +56,6 @@ img {
   height: 100%;
   background-color: transparent;
   z-index: 3;
-}
-
-.header .container {
-  max-width: 1232px;
 }
 
 .header__body {
@@ -87,7 +87,7 @@ img {
 .header__link {
   color: #fff;
   font-size: 14px;
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-weight: 300;
 }
 
@@ -253,4 +253,5 @@ img {
 .slider {
   background: url(../images/dest/sliderbackground.jpg) no-repeat 100%;
   background-size: cover;
+  min-height: 1040px;
 }
