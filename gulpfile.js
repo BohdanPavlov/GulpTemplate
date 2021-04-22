@@ -46,6 +46,7 @@ function browsersync() {
 function scripts() {
 	return src([ // Берём файлы из источников
 		'node_modules/jquery/dist/jquery.min.js', // Пример подключения библиотеки
+		'node_modules/swiper/swiper-bundle.min.js',
 		'app/js/app.js', // Пользовательские скрипты, использующие библиотеку, должны быть подключены в конце
 	])
 		.pipe(concat('app.min.js')) // Конкатенируем в один файл
@@ -55,7 +56,10 @@ function scripts() {
 }
 
 function styles() {
-	return src('app/scss/main.scss') // Выбираем источник: "app/sass/main.sass"
+	return src([
+		'node_modules/swiper/swiper-bundle.min.css',
+		'app/scss/main.scss'
+	]) // Выбираем источник: "app/sass/main.sass"
 		.pipe(eval(preprocessor)()) // Преобразуем значение переменной "preprocessor" в функцию
 		.pipe(concat('app.min.css')) // Конкатенируем в файл app.min.js
 		.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true })) // Создадим префиксы с помощью Autoprefixer
@@ -124,4 +128,4 @@ exports.cleanimg = cleanimg;
 exports.build = series(cleandist, styles, scripts, images, buildcopy);
 
 // Экспортируем дефолтный таск с нужным набором функцийmp
-exports.default = parallel(styles, scripts, images, browsersync, startwatch);
+exports.default = parallel(cleandist, styles, scripts, images, buildcopy, browsersync, startwatch);

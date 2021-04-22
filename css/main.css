@@ -41,8 +41,8 @@ img {
   background-color: transparent;
   position: absolute;
   width: 100%;
-  top: 39px;
-  right: 0;
+  top: 40px;
+  right: -11px;
   z-index: 50;
 }
 
@@ -86,8 +86,6 @@ img {
 .header__link {
   color: #fff;
   font-size: 14px;
-  font-family: Montserrat;
-  font-weight: 300;
 }
 
 .header__link--selected {

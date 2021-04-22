@@ -11,55 +11,92 @@
 
 <body>
 	<div class="wrapper">
-		<div class="slider">
-			<header class="header">
-				<div class="container">
-					<div class="header__body">
-						<a href="#" class="logo">
-							<img src="./images/dest/logos.png" alt="logo">
-							<span class="logo__name">Waxom</span>
-						</a>
-						<div class="header__burger">
-							<span></span>
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<a href="#" class="logo">
+						<img src="./images/dest/logos.png" alt="logo">
+						<span class="logo__name">Waxom</span>
+					</a>
+					<div class="header__burger">
+						<span></span>
+					</div>
+					<nav class="header__menu">
+						<ul class="header__list">
+							<li>
+								<a href="#" class="header__link">Home</a>
+							</li>
+							<li>
+								<a href="#" class="header__link--selected">About Us</a>
+							</li>
+							<li>
+								<a href="#" class="header__link">Portfolio</a>
+							</li>
+							<li>
+								<a href="#" class="header__link">Features</a>
+							</li>
+							<li>
+								<a href="#" class="header__link">Blog</a>
+							</li>
+							<li>
+								<a href="#" class="header__link">Pricing</a>
+							</li>
+							<li>
+								<a href="#" class="header__link">Short codes</a>
+							</li>
+							<li>
+								<a href="#" class="header__link">Contacts</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="cart">
+						<a href="#"><img src="./images/dest/icon-cart.png" alt="icon-cart"></a>
+					</div>
+					<div class="search">
+						<a href="#"><img src="./images/dest/icon-search.png" alt="icon-search"></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="slider">
+			<div class="swiper-container main-slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="container">
+							<span class="swiper-slide__subtitle">Unique and Modern Design</span>
+							<h3 class="swiper-slide__title">Portfolio PSD Template</h3>
+							<p class="swiper-slide__text">Nam liber tempor cum soluta nobis eleifend option congue
+								nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+							<button class="swiper-slide__button" type="submit">GET STARTED</button>
 						</div>
-						<nav class="header__menu">
-							<ul class="header__list">
-								<li>
-									<a href="#" class="header__link">Home</a>
-								</li>
-								<li>
-									<a href="#" class="header__link--selected">About Us</a>
-								</li>
-								<li>
-									<a href="#" class="header__link">Portfolio</a>
-								</li>
-								<li>
-									<a href="#" class="header__link">Features</a>
-								</li>
-								<li>
-									<a href="#" class="header__link">Blog</a>
-								</li>
-								<li>
-									<a href="#" class="header__link">Pricing</a>
-								</li>
-								<li>
-									<a href="#" class="header__link">Short codes</a>
-								</li>
-								<li>
-									<a href="#" class="header__link">Contacts</a>
-								</li>
-							</ul>
-						</nav>
-						<div class="cart">
-							<a href="#"><img src="./images/dest/icon-cart.png" alt="icon-cart"></a>
+					</div>
+					<div class="swiper-slide">
+						<div class="container">
+							<h3 class="swiper-slide__title--2">SLIDE 2</h3>
+							<img class="swiper-slide__image--2" src="./images/dest/slide2.jpg" alt="slide2">
 						</div>
-						<div class="search">
-							<a href="#"><img src="./images/dest/icon-search.png" alt="icon-search"></a>
+					</div>
+					<div class="swiper-slide">
+						<div class="container">
+							<h3 class="swiper-slide__title--3">SLIDE 3</h3>
+							<p class="swiper-slide__text--3">Nam liber tempor cum soluta nobis eleifend option congue
+								nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+							<p class="swiper-slide__text2--3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Accusamus quas, laborum qui dignissimos consequatur porro at, sit sed atque dicta
+								perferendis ipsum expedita eveniet praesentium magnam ab nisi asperiores ratione!</p>
 						</div>
 					</div>
 				</div>
-			</header>
-		</div>
+				<div class="swiper-pagination slider-pagination">
+					<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+					<span class="swiper-pagination-bullet"></span>
+					<span class="swiper-pagination-bullet"></span>
+				</div>
+
+				<div class="swiper-button-prev slider__prev"></div>
+				<div class="swiper-button-next slider__next"></div>
+			</div>
+		</section>
 	</div>
 	<script src="js/app.min.js"></script>
 </body>
