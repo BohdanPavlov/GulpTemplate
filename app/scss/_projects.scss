@@ -1,0 +1,122 @@
+.projects {
+  padding: 74px 0 80px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__links {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__links a {
+    border-radius: 5px;
+    border: 1px solid #cda4a4;
+    font-size: 14px;
+    font-weight: 400;
+    color: #998675;
+    transition: 0.3s;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    background-color: #998675;
+    font-size: 14px;
+    font-family: Raleway, Montserrat, Arial, sans-serif;
+    font-weight: 800;
+    color: $white;
+    width: 170px;
+    height: 50px;
+    border-radius: 3px;
+  }
+}
+
+.ui-tabs .ui-tabs-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ui-tabs .ui-tabs-nav {
+  margin-bottom: 40px;
+}
+.ui-tabs .ui-tabs-nav li {
+  margin: 0px 5px;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #998675;
+    border-radius: 5px;
+  }
+}
+
+.col-33 {
+  position: relative;
+  background-color: #fbfaf8;
+
+  &__text {
+    position: relative;
+    padding: 30px 0px 25px 28px;
+    :before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 15px 12px 15px;
+      border-color: transparent transparent #ffffff transparent;
+      position: absolute;
+      top: -11px;
+      bottom: 100%;
+    }
+  }
+
+  &__links a {
+    margin: 0px 10px;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100px;
+    position: absolute;
+    top: 80px;
+    left: 125px;
+    opacity: 0;
+  }
+}
+.col-33:hover {
+  background-color: $dark_brown;
+  cursor: pointer;
+
+  .col-33__text {
+    :before {
+      border-color: transparent transparent #362f2d transparent;
+    }
+  }
+
+  .title-20 {
+    color: $white;
+  }
+
+  .subtitle-14 {
+    color: $brown;
+  }
+
+  .col-33__links {
+    display: inline-block;
+    position: absolute;
+    top: 80px;
+    left: 125px;
+    opacity: 1;
+  }
+}

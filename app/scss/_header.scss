@@ -46,14 +46,8 @@
 .logo {
     display: flex;
     align-items: center;
-    margin-right: 215px;
+    margin-right: 225px;
     z-index: 3;
-    &__name {
-        color: #fff;
-        font-size: 34px;
-        font-weight: 400;
-        letter-spacing: -2px;
-    }
 }
 
 .cart {

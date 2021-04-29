@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "gulp-scss": "^1.4.0",
+    "jquery-ui": "^1.12.1",
     "node": "^14.16.0",
     "node-sass": "^4.14",
     "swiper": "^6.5.7"
