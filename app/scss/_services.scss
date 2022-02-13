@@ -76,3 +76,31 @@
         }
     }
 }
+
+@media (max-width: 670px){
+    .services{
+        padding: 35px 0 30px;
+        &__title{
+            font: 600 16px/1.25 Raleway,Montserrat,Arial,sans-serif;
+            margin: 0 0 5px;
+        }
+        &__text{
+            font-size: 12px;
+            line-height: 1.5
+        }
+        &__icon{
+            margin: 0 0 5px;
+        }
+        .col--25 {
+            padding-bottom: 15px;
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    .services{
+        .col--25{
+            width: calc(50% - 5px);
+        }
+    }
+}

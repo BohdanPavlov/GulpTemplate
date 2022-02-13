@@ -1,0 +1,208 @@
+.about {
+  background-color: #191919;
+  padding: 75px 0;
+
+  & .container {
+    max-width: 1175px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .about-info {
+      flex: 1 1 270px;
+      padding: 0 40px 0 0;
+
+      &__logo {
+        display: inline-block;
+      }
+
+      &__text {
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #555555;
+      }
+
+      &__read-more {
+        & a {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #d1d1d1;
+        }
+        &:after{
+          content: '';
+          border: solid #fff;
+          border-width: 0 2px 2px 0px;
+          display: inline-block;
+          padding: 3px;
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+        }
+      }
+
+      & div {
+        margin-bottom: 30px;
+      }
+
+      &:nth-child(3){
+        margin: 0;
+      }
+    }
+
+    .about-recent {
+      flex: 1 1 270px;
+      padding: 0 40px 0 0;
+      .post{
+        &:hover {
+          .post__title {
+            color: #fff;
+          }
+
+          .post__text {
+            color: $brown;
+          }
+        }
+        &__title {
+          font-family: Montserrat, sans-serif;
+          font-size: 12px;
+          line-height: 20px;
+          font-weight: 300;
+          color: #363636;
+          margin-top: 20px;
+        }
+
+        &__text {
+          font-family: Montserrat, sans-serif;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 300;
+          color: #555555;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .about-twitter {
+    flex: 1 1 270px;
+    padding: 0 40px 0 0;
+    .post{
+      &__body{
+        color: #555555;
+        margin-top: 20px;
+        & a{
+          font-family: Montserrat, sans-serif;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 300;
+          color: #00bff3;
+        }
+      }
+      &__time{
+        font-family: Montserrat, sans-serif;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 300;
+        color: #363636;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .about-widget{
+    flex: 0 1 270px;
+    &__heading{
+      margin: 0 0 30px 0;
+    }
+    .widgets{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 10px;
+      grid-column-gap: 5px;
+    }
+  }
+}
+
+
+.about-heading {
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.post {
+  border-bottom: 2px solid #252525;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+}
+
+@media(max-width: 838px){
+  .about{
+    padding: 15px 0;
+    & .container{
+      .about-info{
+        & div{
+          margin-bottom: 10px;
+        }
+      }
+      .about-recent{
+        .post__title{
+          margin-top: 0;
+        }
+        .post__text{
+          margin-bottom: 5px;
+        }
+      }
+      .about-twitter{
+        margin: 15px 0 0 0;
+        .post__body{
+          margin-top: 5px;
+        }
+        .post__time{
+          margin-bottom: 3px;
+        }
+      }
+      .about-widget{
+        margin: 15px 0 0 0;
+      }
+    }
+  }
+}
+
+@media(max-width: 569px){
+  .about{
+    text-align: center;
+    & .container{
+      justify-content: center;
+      align-items: center;
+      .about-info{
+        &__text{
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+      .about-recent{
+        .post__text{
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+      .about-twitter{
+        .post__body{
+          font-size: 12px;
+        }
+      }
+      .about-widget__heading{
+        margin: 0 0 5px 0;
+      }
+    }
+  }
+}
+

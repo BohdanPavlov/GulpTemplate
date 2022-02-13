@@ -47,11 +47,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .ui-tabs .ui-tabs-nav {
   margin-bottom: 40px;
 }
+
 .ui-tabs .ui-tabs-nav li {
-  margin: 0px 5px;
+  margin: 0 5px;
   transition: 0.3s;
 
   &:hover {
@@ -66,7 +68,8 @@
 
   &__text {
     position: relative;
-    padding: 30px 0px 25px 28px;
+    padding: 30px 0 25px 28px;
+
     :before {
       content: "";
       width: 0;
@@ -79,22 +82,10 @@
       bottom: 100%;
     }
   }
-
-  &__links a {
-    margin: 0px 10px;
-  }
-
-  &__links {
-    display: flex;
-    justify-content: space-between;
-    min-width: 100px;
-    position: absolute;
-    top: 80px;
-    left: 125px;
-    opacity: 0;
-  }
 }
+
 .col-33:hover {
+  position: relative;
   background-color: $dark_brown;
   cursor: pointer;
 
@@ -118,5 +109,53 @@
     top: 80px;
     left: 125px;
     opacity: 1;
+  }
+}
+
+@media (max-width: 670px){
+  .projects {
+    padding: 23px 0 0;
+  }
+  .ui-tabs .ui-tabs-nav {
+    margin-bottom: 0;
+  }
+
+  .col-33 {
+    width: calc(50% - 10px);
+    margin: 0 0 15px;
+    &__text{
+      padding: 10px 0 0 7px;
+    }
+    &:hover .col-33__links {
+      display: inline-block;
+      position: absolute;
+      top: 80px;
+      left: 125px;
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 520px){
+  .col-33{
+    width: calc(100% - 10px);
+    & img{
+      width: 100%;
+    }
+  }
+  .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 0.1em 0.4em;
+  }
+}
+
+@media (max-width: 440px){
+  .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 0.1em 0.2em;
+  }
+  .ui-tabs .ui-tabs-nav li {
+    margin: 0 3px;
+  }
+  .projects__links a {
+    font-size: 11px;
   }
 }

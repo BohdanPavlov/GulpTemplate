@@ -1,0 +1,35 @@
+.logos{
+  background: url("../images/dest/second-back.jpg") 0 0/cover no-repeat;
+  padding: 140px 0;
+  & .container{
+    max-width: 1120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item{
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 720px){
+  .logos{
+    padding: 75px 0;
+    &__item{
+      margin: 10px 10px 0;
+    }
+  }
+}
+
+@media (max-width: 491px){
+  .logos{
+    padding: 0;
+    & .container{
+      justify-content: center;
+    }
+    &__item{
+      margin: 15px 0 0 10px;
+    }
+  }
+}

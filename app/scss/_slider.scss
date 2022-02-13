@@ -10,13 +10,13 @@
     color: #ffffff;
 
     &__title {
-        font-family: Raleway;
+        font-family: Raleway, sans-serif;
         font-size: 36px;
         font-weight: 500;
     }
 
     &__subtitle {
-        font-family: Raleway;
+        font-family: Raleway, sans-serif;
         font-size: 52px;
         font-weight: 800;
         padding-bottom: 15px;
@@ -32,7 +32,7 @@
     }
 
     &__btn-wrapper a {
-        font-family: Raleway;
+        font-family: Raleway, sans-serif;
         font-size: 14px;
         font-weight: 800;
         line-height: 1.64;
@@ -95,4 +95,33 @@
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
     bottom: 37px;
+}
+
+@media (max-width: 680px){
+    .slider {
+        &-row{
+            padding: 150px 0 70px;
+        }
+        &__title {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+        }
+
+        &__text {
+            font-size: 12px;
+            margin: 0 10px 50px 10px;
+        }
+
+        &__btn-wrapper a {
+            font-size: 14px;
+            padding: 16px 24px 16px 22px;
+        }
+    }
+    .swiper-button-next, .swiper-button-prev{
+        top: 60%;
+    }
 }
